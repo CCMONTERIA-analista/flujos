@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  saludo:
+    runs_on: Ubuntu-latest
+    steps:
+      - name: Decir hola
+        run: echo "Hola desde actions"
+
+      - name: Mostrar info del runner
+        run: |
+          echo "sistema operativo"
+          uname -a
+          echo "directorio actual"
+          pwd
+          echo "Fecha"
+          date
