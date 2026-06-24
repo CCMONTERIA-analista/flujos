@@ -6,7 +6,7 @@ on:
 
 jobs:
   saludo:
-    runs_on: Ubuntu-latest
+    runs-on: Ubuntu-latest
     steps:
       - name: Decir hola
         run: echo "Hola desde actions"
