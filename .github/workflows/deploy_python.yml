@@ -23,6 +23,8 @@ jobs:
           uses: astral-sh/ruff-action@v4.0.0
           with:
             args: "format --check"
+        - name: Checkout repository
+          uses: actions/checkout@v6
     
     test:
       needs: lint
@@ -45,3 +47,13 @@ jobs:
             pip install pytest
         - name: run test
           run: pytest -v
+    deplyo:
+      needs: test
+      runs-on: ubuntu-latest
+      if: github.ref == 'refs/heads/main'
+      environment:
+        name: production
+      steps:
+        - uses: actions/checkout@v5
+        - name: simular despliegue
+          run: echo "desplegando (simulacion)"
