@@ -1,4 +1,4 @@
-from calculadora import sumar, restar, multiplicar, dividir
+from calculadora import sumar, restar, multiplicar, dividir, potencia
 
 
 def test_sumar():
@@ -15,3 +15,7 @@ def test_multiplicar():
 
 def test_dividir():
     assert dividir(1, 1) == 1
+
+
+def test_potencia():
+    assert potencia(1, 1) == 1
