@@ -6,4 +6,4 @@ def test_sumar():
 
 
 def test_restar():
-    assert restar(2 - 1) == 1
+    assert restar(2, 1) == 1
