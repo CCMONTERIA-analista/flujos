@@ -12,3 +12,10 @@ def multiplicar(a, b):
 
 def dividir(a, b):
     return a / b
+
+
+def potencia(a, b):
+    return a**b
+
+
+variable = "variable"
