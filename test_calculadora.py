@@ -1,4 +1,4 @@
-from calculadora import sumar, restar, multiplicar
+from calculadora import sumar, restar, multiplicar, dividir
 
 
 def test_sumar():
@@ -11,3 +11,7 @@ def test_restar():
 
 def test_multiplicar():
     assert multiplicar(2, 3) == 6
+
+
+def test_dividir():
+    assert dividir(1, 1) == 1
