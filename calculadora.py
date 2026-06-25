@@ -12,3 +12,10 @@ def multiplicar(a, b):
 
 def dividir(a, b):
     return a / b
+
+
+variable = "algo"
+
+otra = "cosa"
+
+de = "nuevo"

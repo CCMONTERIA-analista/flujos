@@ -15,10 +15,3 @@ def test_multiplicar():
 
 def test_dividir():
     assert dividir(1, 1) == 1
-
-
-variable = "algo"
-
-otra = "cosa"
-
-de = "nuevo"
