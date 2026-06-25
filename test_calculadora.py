@@ -18,3 +18,5 @@ def test_dividir():
 
 
 variable = "algo"
+
+otra = "cosa"
